@@ -26,6 +26,12 @@ namespace MergedStringChecker.Tests
     }
 
     [Test]
+    public void CanHandleBananas()
+    {
+      Assert.IsTrue(StringMerger.isMerge("Bananas from Bahamas", "Bahas", "Bananas from am"), "Going bananas!");
+    }
+
+    [Test]
     public void SadPath1()
     {
       Assert.IsFalse(StringMerger.isMerge("codewars", "cod", "wars"), "Codewars are not codwars");
